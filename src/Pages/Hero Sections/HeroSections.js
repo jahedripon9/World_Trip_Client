@@ -328,18 +328,11 @@ export default function Example() {
                 ))}
               </div>
               <div>
-                <a
-                  href="#"
-                  className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
-                  </a>
-                </p>
+              {user?.email ?
+                            <Link onClick={logOut} to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link>:
+                            <Link   to='/login' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" ><span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In </Link>}
+                            <button className="font-bold text-1xl px-2 mx-2 "> Signed in: <a href="/login" className='font-bold text-1xl text-white border-solid border-2 border-white rounded-md mx-2 px-2'>{user?.displayName }</a>
+                    </button>
               </div>
             </div>
             
