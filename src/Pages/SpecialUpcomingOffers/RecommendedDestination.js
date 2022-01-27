@@ -16,7 +16,7 @@ const Tabs = ({ color }) => {
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 1
-                    ? "text-white bg-" + color + "-600"
+                    ? "text-white bg-blue-500 bg-" + color + "-600"
                     : "text-" + color + "-600 bg-white")
                 }
                 onClick={e => {
@@ -35,7 +35,7 @@ const Tabs = ({ color }) => {
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 2
-                    ? "text-white bg-" + color + "-600"
+                    ? "text-white bg-blue-500 bg-" + color + "-600"
                     : "text-" + color + "-600 bg-white")
                 }
                 onClick={e => {
@@ -54,7 +54,7 @@ const Tabs = ({ color }) => {
                 className={
                   "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                   (openTab === 3
-                    ? "text-white bg-" + color + "-600"
+                    ? "text-white bg-blue-500 bg-" + color + "-600"
                     : "text-" + color + "-600 bg-white")
                 }
                 onClick={e => {
@@ -310,85 +310,49 @@ const Tabs = ({ color }) => {
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
+                        </svg>Ansgar Scheffold</p>
                         </div>
                     </div>
+                    
+                    
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/1831236/pexels-photo-1831236.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1831236.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Tivat</h2>
                         <p class="mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
+                        </svg>Montenegro</p>
                         </div>
                     </div>
+                    
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?cs=srgb&dl=pexels-riciardus-307008.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">San Juan Bautista </h2>
                         <p class="mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
+                        </svg>Spain</p>
                         </div>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?cs=srgb&dl=pexels-te-lensfix-1371360.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Tambon Khlong Sok</h2>
                         <p class="mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264"/>
-                        </a>
-                        <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
-                        <p class="mt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265"/>
-                        </a>
-                        <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
-                        <p class="mt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
-                        </div>
-                    </div>
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-                        <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267"/>
-                        </a>
-                        <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
-                        <p class="mt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
+                        </svg>Thailand</p>
                         </div>
                     </div>
                     
@@ -408,7 +372,7 @@ const Tabs = ({ color }) => {
 export default function TabsRender() {
   return (
     <>
-       <Tabs color={"blue"}/>
+       <Tabs color='blue'/>
     </>
     
   );
