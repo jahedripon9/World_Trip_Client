@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom"
 
 const products = [
     {
       id: 1,
       name: 'Loga Sea',
-      href: '#',
+      href: '/book',
       imageSrc: 'https://images.pexels.com/photos/3788363/pexels-photo-3788363.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       imageAlt: "Front of men's Basic Tee in black.",
       price: '$7000',
@@ -122,7 +123,7 @@ const products = [
                   </div>
                   <p className="text-md  font-bold text-gray-900">{product.price}/Person</p>
                 </div>
-                <button className="py-1 px-4 bg-blue-300 text-blue-600 rounded-full ">Book Now</button>
+                <Link to='/book'><button className="py-1 px-4 bg-blue-300 text-blue-600 rounded-full ">Book Now</button></Link>
 
               </div>
             ))}

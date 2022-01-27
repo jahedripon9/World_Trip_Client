@@ -5,6 +5,9 @@ import TravelAnyCorner from '../Hero Sections/TravelAnyCorner';
 import SpecialUpcommingOffers from '../SpecialUpcomingOffers/SpecialUpcomingOffers';
 import RecommendedDestination from '../SpecialUpcomingOffers/RecommendedDestination';
 import Testimonials from '../SpecialUpcomingOffers/Testimonials';
+import RegisterToday from '../RegisterToday/RegisterToday';
+import Footer from '../Hero Sections/Footer';
+// import Login from '../Login/Login/Login';
 
 
 const Home = () => {
@@ -16,6 +19,10 @@ const Home = () => {
             <TravelAnyCorner></TravelAnyCorner>
             <RecommendedDestination></RecommendedDestination>
             <Testimonials></Testimonials>
+            <RegisterToday></RegisterToday>
+            <Footer></Footer>
+            {/* <Login></Login> */}
+
 
         </div>
     );

@@ -16,6 +16,8 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { Link } from 'react-router-dom'
+import useAuth from '../../hooks/useAuth'
 
 const solutions = [
   {
@@ -80,6 +82,8 @@ function classNames(...classes) {
 }
 
 export default function Example() {
+  const { logOut, user} = useAuth();
+ 
   return (
     <Popover className="relative ">
         
@@ -87,14 +91,14 @@ export default function Example() {
           
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">Workflow</span>
-              <img
+            <span href="/home">
+              <span className="sr-only">World Trip</span>
+              <Link to='/home'><img
                 className="h-10 w-auto sm:h-16"
                 src="https://i.ibb.co/0ZBFZcj/logo.png"
                 alt=""
-              />
-            </a>
+              /></Link>
+            </span>
           </div><h2 className='md:hidden font-bold text-white text-2xl'>World Trip</h2>
           <div className="-mr-2 -my-2 md:hidden"> 
             <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -112,7 +116,7 @@ export default function Example() {
                       'group  rounded-md inline-flex items-center text-base font-medium hover:text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Blog</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-white' : 'text-white',
@@ -153,7 +157,7 @@ export default function Example() {
                             <div key={item.name} className="flow-root">
                               <a
                                 href={item.href}
-                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-white hover:bg-gray-100"
+                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-400 hover:bg-gray-100"
                               >
                                 <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
                                 <span className="ml-3">{item.name}</span>
@@ -169,7 +173,7 @@ export default function Example() {
             </Popover>
 
             <a href="#" className="text-base font-medium text-white ">
-              Pricing
+            Tips
             </a>
             <a href="#" className="text-base font-medium text-white">
               Docs
@@ -248,15 +252,16 @@ export default function Example() {
             </Popover>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-white">
-              Sign in
-            </a>
-            <a
-              href="#"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-indigo-700"
-            >
-              Sign up
-            </a>
+          {/* <Link to='/login'><button className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg" > <span><img className='w-8 bg-white mr-6 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In with Google</button></Link> */}
+          {user?.email ?
+                            <Link onClick={logOut} to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link>:
+                            <Link   to='/login' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" ><span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In </Link>}
+                            <button className="font-bold text-1xl px-2 mx-2 "> Signed in: <a href="/login" className='font-bold text-1xl text-white border-solid border-2 border-white rounded-md mx-2 px-2'>{user?.displayName }</a>
+                    </button>
+            <div>
+              
+            </div>
+            
           </div>
         </div>
       </div>

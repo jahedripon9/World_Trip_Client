@@ -117,15 +117,15 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/4356137/pexels-photo-4356137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
                         </a>
                         <div class="mt-4">
-                        <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium">Piramid</h2>
                         <p class="mt-1">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline -mt-1 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>Cambodia</p>
+                        </svg>Egypt</p>
                         </div>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
@@ -408,7 +408,7 @@ const Tabs = ({ color }) => {
 export default function TabsRender() {
   return (
     <>
-       <Tabs color={'blue'}/>
+       <Tabs color={"blue"}/>
     </>
     
   );
