@@ -8,7 +8,7 @@ const Book = ({book}) => {
         <div> 
             <div className="container mx-auto">
             <section className="text-gray-600 body-font">
-                <div className="container px-5 py-10 mx-auto">
+                <div className="container px-5 py-8 mx-auto">
                     <div className="item flex flex-wrap-m-4">
                     <div className="lg:w-full md:w-1/2 p-4 ">
                         <a className="block relative h-48 rounded overflow-hidden">

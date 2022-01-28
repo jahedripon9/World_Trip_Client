@@ -11,7 +11,7 @@ const Booking = () => {
     },[])
     return (
         <div className='mx-20'>
-            <div class=" text-center mb-20">
+            <div class=" text-center mb-8">
                     <h1 class="lg:text-5xl sm:text-3xl text-5xl font-bold title-font mb-4 text-yellow-600">Booking your World Trips</h1>
                     
                     <div class="flex mt-6 justify-center">

@@ -117,7 +117,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/4356137/pexels-photo-4356137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?cs=srgb&dl=pexels-francesco-ungaro-2325446.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Piramid</h2>
@@ -130,7 +130,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?cs=srgb&dl=pexels-pierre-blach%C3%A9-2901209.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -143,7 +143,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?cs=srgb&dl=pexels-sam-kolder-2387873.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -156,7 +156,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/1660995/pexels-photo-1660995.jpeg?cs=srgb&dl=pexels-tom%C3%A1%C5%A1-mal%C3%ADk-1660995.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -203,7 +203,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/421x261"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-347141.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -216,7 +216,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/422x262"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?cs=srgb&dl=pexels-jaime-reimer-2662116.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -229,7 +229,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/423x263"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?cs=srgb&dl=pexels-asad-photo-maldives-1591373.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -242,7 +242,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/424x264"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?cs=srgb&dl=pexels-pierre-blach%C3%A9-2901209.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -255,7 +255,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/425x265"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?cs=srgb&dl=pexels-sam-kolder-2387873.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>
@@ -268,7 +268,7 @@ const Tabs = ({ color }) => {
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
                         <a class="block relative h-48 rounded overflow-hidden">
-                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/427x267"/>
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.pexels.com/photos/507410/pexels-photo-507410.jpeg?cs=srgb&dl=pexels-gabriela-palai-507410.jpg&fm=jpg"/>
                         </a>
                         <div class="mt-4">
                         <h2 class="text-gray-900 title-font text-lg font-medium">Kina Mountain</h2>

@@ -18,7 +18,7 @@ const Servicead = () => {
     };
     return (
         <div className='add-food bg-yellow-100 '> 
-        <img className='w-56 rounded-full mx-auto' src="https://i.ibb.co/tq0vtxR/image.png" alt="" />
+        <img className='w-80 rounded-full mx-auto' src="https://images.pexels.com/photos/21014/pexels-photo.jpg?cs=srgb&dl=pexels-mihis-alex-21014.jpg&fm=jpg" alt="" />
             <div className='pb-16 text-red-500 '>
             <h2 className='font-bold text-5xl my-5 underline'>Please Add Travel Trips</h2>
             <form onSubmit={handleSubmit(onSubmit)} className='text-2xl  text-center mb-28'>
