@@ -175,7 +175,7 @@ export default function Example() {
             <a href="/tips" className="text-base font-medium text-white ">
             Tips
             </a>
-            <a href="#" className="text-base font-medium text-white">
+            <a href="/docs" className="text-base font-medium text-white">
               Docs
             </a>
 

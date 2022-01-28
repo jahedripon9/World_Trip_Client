@@ -18,6 +18,7 @@ import TeamMember from "./Pages/DashBoard/TeamMember";
 import NotFound from "./Pages/NotFound";
 import Tips from "./Pages/Hero Sections/Tips";
 import Blog from "./Pages/Blog/Blog";
+import Docs from "./Pages/Docs/Docs";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
       <Route path="/team" element={<TeamMember />}/> 
       <Route path="/tips" element={<Tips />}/> 
       <Route path="/blog" element={<Blog />}/> 
+      <Route path="/docs" element={<Docs />}/> 
       <Route path="*" element={<NotFound />}/> 
     </Routes>
   </BrowserRouter>
