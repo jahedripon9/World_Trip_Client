@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import HeroSection from '../../Hero Sections/HeroSections'
 import useAuth from '../../../hooks/useAuth';
 
@@ -8,7 +8,10 @@ import useAuth from '../../../hooks/useAuth';
 const Register = () => {
     const [loginData, setLoginData] = useState({});
     const history = useNavigate();
-    const{user, userRegister, authError} = useAuth();
+    const location = useLocation();
+    const{user, userRegister, authError, signInUsingGoogle} = useAuth();
+    const redirect_uri = location?.state?.from || '/home'
+
 
     
 
@@ -28,7 +31,12 @@ const Register = () => {
         e.preventDefault();
         
     }
-    
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+          .then (result => {
+            history.push(redirect_uri);
+          })
+      }
     return (
         <div> 
             <div className='bg-gray-300'>
@@ -38,7 +46,7 @@ const Register = () => {
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-10 mx-auto flex flex-wrap items-center">
                 <div className="lg:max-w-lg lg:ml-36 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    <img className="object-cover object-center rounded" alt="hero" src="https://i.ibb.co/CBZNk0g/giphy.gif"/>
+                    <img className="object-cover object-center rounded" alt="hero" src="https://images.pexels.com/photos/346696/pexels-photo-346696.jpeg?cs=srgb&dl=pexels-porapak-apichodilok-346696.jpg&fm=jpg"/>
                     </div>
                     <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
                     <h2 className="text-gray-900 text-lg font-medium title-font mb-5 uppercase">Register</h2>
@@ -62,6 +70,7 @@ const Register = () => {
                         
                     </form>
                     <Link to='/login'><button className="text-lg text-gray-500 mt-3">Log In Now</button></Link>
+                    <button onClick={handleGoogleLogin} className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg" > <span><img className='w-8 bg-white mr-6 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In with Google</button>
                     
                     
                     </div>

@@ -23,26 +23,26 @@ const solutions = [
   {
     name: 'Analytics',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '/blog',
     icon: ChartBarIcon,
   },
   {
     name: 'Engagement',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/blog',
     icon: CursorClickIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '/blog', icon: ShieldCheckIcon },
   {
     name: 'Integrations',
     description: "Connect with third-party tools that you're already using.",
-    href: '#',
+    href: '/blog',
     icon: ViewGridIcon,
   },
   {
     name: 'Automations',
     description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
+    href: '/blog',
     icon: RefreshIcon,
   },
 ]
@@ -172,7 +172,7 @@ export default function Example() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium text-white ">
+            <a href="/tips" className="text-base font-medium text-white ">
             Tips
             </a>
             <a href="#" className="text-base font-medium text-white">
@@ -252,10 +252,9 @@ export default function Example() {
             </Popover>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          {
-                               user?.email ?   
+          {user?.email ?   
                                <span>
-                                <NavLink to='/deshboard'><button >Deshboard</button>
+                                <NavLink to='/deshboard'><button className='bg-white py-1 px-3'>Deshboard</button>
                                 </NavLink>
                                <button onClick={logOut} className="block px-3 py-2 hover:bg-gray-200">Logout</button>
                                </span> 

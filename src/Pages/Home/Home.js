@@ -18,10 +18,10 @@ const Home = () => {
             <SpecialUpcommingOffers></SpecialUpcommingOffers>
             <TravelAnyCorner></TravelAnyCorner>
             <RecommendedDestination></RecommendedDestination>
+            <Booking></Booking>
             <Testimonials></Testimonials>
             <RegisterToday></RegisterToday>
             <Footer></Footer>
-            <Booking></Booking>
 
         </div>
     );

@@ -41,7 +41,7 @@ const Login = () => {
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-10 mx-auto flex flex-wrap items-center">
                 <div className="lg:max-w-lg lg:ml-36 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-                    <img className="object-cover object-center rounded" alt="hero" src="https://i.ibb.co/16p9QYj/drone-800-600.gif"/>
+                    <img className="object-cover object-center rounded" alt="hero" src="https://images.pexels.com/photos/21014/pexels-photo.jpg?cs=srgb&dl=pexels-mihis-alex-21014.jpg&fm=jpg"/>
                     </div>
                     <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
                     <h2 className="text-gray-900 text-lg font-medium title-font mb-5">LOG IN</h2>
