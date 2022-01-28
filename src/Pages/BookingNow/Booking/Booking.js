@@ -23,7 +23,7 @@ const Booking = () => {
             {
                     books.map(book => <Book
                     key={book._id}
-                    item={book}
+                    book={book}
                     ></Book>)
                 }
             </div>

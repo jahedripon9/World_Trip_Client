@@ -5,7 +5,7 @@ import './Book.css';
 const Book = ({book}) => {
     const { _id, name, price, description, img } = book;
     return (
-        <div>
+        <div> 
             <div className="container mx-auto">
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-10 mx-auto">
@@ -25,7 +25,7 @@ const Book = ({book}) => {
                         
                         <p className="mt-1 font-bold text-red-500 text-2xl">${price}</p>
                         </div>
-                        <Link to={`/deliveryinfo/${_id}`}><button className="text-indigo-500 inline-flex items-center lg:font-bold md:mb-2 lg:mb-0 bg-yellow-400 p-2 rounded-3xl">Place Order
+                        <Link to={`/booking/${_id}`}><button className="text-indigo-500 inline-flex items-center lg:font-bold md:mb-2 lg:mb-0 bg-yellow-400 p-2 rounded-3xl">Booking Now
                             <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>

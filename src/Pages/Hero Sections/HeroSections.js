@@ -16,7 +16,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
 
 const solutions = [
@@ -252,16 +252,23 @@ export default function Example() {
             </Popover>
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          {/* <Link to='/login'><button className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg" > <span><img className='w-8 bg-white mr-6 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In with Google</button></Link> */}
-          {user?.email ?
-                            <Link onClick={logOut} to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link>:
-                            <Link   to='/login' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" ><span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In </Link>}
-                            <button className="font-bold text-1xl px-2 mx-2 "> Signed in: <a href="/login" className='font-bold text-1xl text-white border-solid border-2 border-white rounded-md mx-2 px-2'>{user?.displayName }</a>
-                    </button>
-            <div>
-              
-            </div>
-            
+          {
+                               user?.email ?   
+                               <span>
+                                <NavLink to='/deshboard'><button >Deshboard</button>
+                                </NavLink>
+                               <button onClick={logOut} className="block px-3 py-2 hover:bg-gray-200">Logout</button>
+                               </span> 
+                               :
+                               <NavLink to='/login'>{user?.displayName }<button className="block px-3 py-2 hover:bg-gray-200">Login</button></NavLink> 
+                               
+                           }
+
+
+            {/* <NavLink to='/register'><span className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+            >
+              Sign up
+            </span></NavLink> */}
           </div>
         </div>
       </div>
@@ -327,16 +334,17 @@ export default function Example() {
                   </a>
                 ))}
               </div>
-              <div>
-              {user?.email ?
-                            <Link onClick={logOut} to='/home' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" > <span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Log Out </Link>:
-                            <Link   to='/login' className="ml-auto inline-flex  font-bold text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-md" ><span><img className='w-4 bg-white mr-2 my-1 rounded-md' src="https://i.ibb.co/w7HtJyq/google.png" alt="" /></span> Sign In </Link>}
-                            <button className="font-bold text-1xl px-2 mx-2 "> Signed in: <a href="/login" className='font-bold text-1xl text-white border-solid border-2 border-white rounded-md mx-2 px-2'>{user?.displayName }</a>
-                    </button>
-              </div>
-            </div>
-            
+              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <NavLink to='/login'><span  className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              Sign in
+            </span></NavLink>
+            <NavLink to='/register'><span className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+            >
+              Sign up
+            </span></NavLink>
           </div>
+        </div>
+      </div>
           
         </Popover.Panel>
       </Transition>

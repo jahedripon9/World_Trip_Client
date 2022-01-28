@@ -7,7 +7,7 @@ import RecommendedDestination from '../SpecialUpcomingOffers/RecommendedDestinat
 import Testimonials from '../SpecialUpcomingOffers/Testimonials';
 import RegisterToday from '../RegisterToday/RegisterToday';
 import Footer from '../Hero Sections/Footer';
-// import Login from '../Login/Login/Login';
+import Booking from '../BookingNow/Booking/Booking';
 
 
 const Home = () => {
@@ -21,8 +21,7 @@ const Home = () => {
             <Testimonials></Testimonials>
             <RegisterToday></RegisterToday>
             <Footer></Footer>
-            {/* <Login></Login> */}
-
+            <Booking></Booking>
 
         </div>
     );
