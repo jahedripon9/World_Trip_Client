@@ -8,7 +8,7 @@ const Servicead = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://radiant-bayou-30119.herokuapp.com/booking', data)
         .then(res => {
             if(res.data.insertedId){
                 alert('Successfully Travels Trips')
